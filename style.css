@@ -30,6 +30,7 @@ body{
     max-width: 1400px;
     margin: 0 auto;
     height: 100%;
+    padding: 0 10px;
 }
 .about__photo{
     width: 100%;
@@ -84,4 +85,56 @@ body{
     font-size: 17px;
     line-height: 21px;
     padding: 0 10px;
+}
+@media(max-width: 1400px){
+    .about__container{
+        max-width: 1000px;
+    }
+    .about__photo{
+        margin: -75px 0 -50px 0;
+    }
+    .avatar{
+        height: 150px;
+    }
+}
+@media(max-width: 766px){
+    .about__photo{
+        justify-content: center;
+    }
+    .avatar{
+        height: 300px;
+    }
+    .about__photo{
+        margin: -150px 0 0px 0;
+    }
+    .row{
+        display: block;
+    }
+    .first__subtitle, .scnd__subtitle{
+        padding: 20px 0 25px 20px;
+    }
+}
+@media(max-width: 500px){
+    .avatar {
+        height: 200px;
+    }
+    .about__photo {
+        margin: -100px 0 0 0;
+    }
+    .text__subtitle {
+        font-size: 18px;
+    }
+    .text__title {
+        font-size: 32px;
+        margin: 10px 0 20px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .first__subtitle, .scnd__subtitle {
+        padding: 10px 0 20px 10px;
+    }
 }
